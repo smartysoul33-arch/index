@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>iOS Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <!-- Display -->
+        <div class="display">
+            <div class="expression" id="expression"></div>
+            <div class="result" id="result">0</div>
+        </div>
+
+        <!-- Scientific Panel (Toggle) -->
+        <div class="scientific-panel" id="scientificPanel">
+            <div class="btn scientific" data-action="rad">Rad</div>
+            <div class="btn scientific" data-action="sin">sin</div>
+            <div class="btn scientific" data-action="cos">cos</div>
+            <div class="btn scientific" data-action="tan">tan</div>
+            <div class="btn scientific" data-action="pi">π</div>
+            <div class="btn scientific" data-action="e">e</div>
+            <div class="btn scientific" data-action="sqrt">√</div>
+            <div class="btn scientific" data-action="square">x²</div>
+            <div class="btn scientific" data-action="log">log</div>
+            <div class="btn scientific" data-action="ln">ln</div>
+            <div class="btn scientific" data-action="inverse">1/x</div>
+            <div class="btn scientific" data-action="abs">|x|</div>
+        </div>
+
+        <!-- Toggle Button -->
+        <div class="btn toggle-btn" id="toggleScientific">⌃</div>
+
+        <!-- Basic Calculator Buttons -->
+        <div class="buttons">
+            <div class="btn function" data-action="clear">AC</div>
+            <div class="btn function" data-action="toggle-sign">+/-</div>
+            <div class="btn function" data-action="percent">%</div>
+            <div class="btn operator" data-action="divide">÷</div>
+
+            <div class="btn number" data-action="7">7</div>
+            <div class="btn number" data-action="8">8</div>
+            <div class="btn number" data-action="9">9</div>
+            <div class="btn operator" data-action="multiply">×</div>
+
+            <div class="btn number" data-action="4">4</div>
+            <div class="btn number" data-action="5">5</div>
+            <div class="btn number" data-action="6">6</div>
+            <div class="btn operator" data-action="subtract">-</div>
+
+            <div class="btn number" data-action="1">1</div>
+            <div class="btn number" data-action="2">2</div>
+            <div class="btn number" data-action="3">3</div>
+            <div class="btn operator" data-action="add">+</div>
+
+            <div class="btn number zero" data-action="0">0</div>
+            <div class="btn number" data-action="decimal">.</div>
+            <div class="btn operator equals" data-action="equals">=</div>
+        </div>
+
+        <!-- History Panel -->
+        <div class="history-panel" id="historyPanel">
+            <div class="history-header">
+                <span>History</span>
+                <span class="clear-history" id="clearHistory">Clear</span>
+            </div>
+            <div class="history-list" id="historyList"></div>
+        </div>
+
+        <!-- History Toggle Button -->
+        <div class="history-toggle" id="historyToggle">
+            <span>⏱</span>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
